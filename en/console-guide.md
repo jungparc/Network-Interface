@@ -9,7 +9,7 @@
 
 * Subnet: Select the subnet in which to create the network interface.
 
-* Virtual IP: Create a network interface to use for a virtual IP for redundancy.<br>You can preempt an IP to be used as a virtual IP so that it is not assigned to resources such as other instances and load balancers.<br>The network interface created with a virtual IP has a device name of `VIRTUAL_IP` and can be set as the gateway of the route in the route setting of the routing table.<br>A network interface created with a virtual IP cannot be directly attached to an instance for use when creating an instance.
+* Virtual IP: Create a network interface to use for a virtual IP for redundancy.<br>You can preempt an IP to be used as a virtual IP so that it is not assigned to resources such as other instances and load balancers.<br>The network interface created with a virtual IP has a device name of "VIRTUAL_IP" and can be set as the gateway of the route in the route setting of the routing table.<br>A network interface created with a virtual IP cannot be directly attached to an instance for use when creating an instance.
 
 * Security: This feature lets you prevent spoofing and set up a security group on a network interface.<br>Enabling the security feature allows you to prevent spoofing by blocking packets that do not have the IP/MAC address of a network interface as a source from being sent through the network interface, and to control traffic using security groups. <br>Disabling the security feature turns off all of such anti-spoofing features and security group settings. This will allow all packets, so if you do not have your own security features (firewall, etc.), it is strongly recommended to use this feature.
 
