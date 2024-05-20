@@ -52,15 +52,19 @@ Therefore, to use a virtual IP, you must change the security settings to bypass 
         When registering the virtual IP as an "additional allowed address" on the network interfaces of the instances for which the virtual IP is used, you allow packets with this IP as a source.<br>
         In limited cases, you can bypass anti-spoofing and apply security groups without turning off security features.<br>
         However, this feature is not currently available in the console, to use this feature, you need to create a virtual IP and contact [1:1 Inquiry](https://www.nhncloud.com/en/support/inquiry) using the form below (it will be available in the console in the future).
-        <pre><code class="language-console">1. Request to register additional allowed addresses
-   - Organization ID/Project ID:
-- Region: (Public/Public, KR1/KR2)<br>2. Virtual IP
-- IP Address:
-- VPC ID:<br>3. Register additional allowed addresses for
-- Instance Name:
-- Instance UUID:
-- The IP of the network interface to which the virtual IP will be attached:</code></pre>   
-
+        ```
+        1. Request to register additional allowed addresses
+            * Organization ID/Project ID:
+            * Region: (Public/Public, KR1/KR2)
+        2. Virtual IP
+            * IP Address:
+            * VPC ID:
+        3. Register additional allowed addresses for
+            * Instance Name:
+            * Instance UUID:
+            * The IP of the network interface to which the virtual IP will be attached:
+        ```
+        
 2. Configure instance operating system
 After you've changed the security settings, configure a virtual IP for your instance. The cloud system does not provide a separate feature for this, and you must either add the IP within the instance using the appropriate method for the instance's operating system or distribution, or configure it yourself using an application.
 
